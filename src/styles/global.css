@@ -104,3 +104,8 @@ body.contact-page footer {
   background-color: transparent;
   z-index: 2;
 }
+
+body.contact-page {
+  overflow: hidden;
+  height: 100vh;
+}
