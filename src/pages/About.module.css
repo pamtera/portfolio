@@ -1,0 +1,118 @@
+/* ─── Page ───────────────────────────────────────────────────── */
+
+.page {
+  padding-top: var(--space-10);
+}
+
+/* ─── Layout ─────────────────────────────────────────────────── */
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--col-gap);
+}
+
+.left {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right {
+  grid-column: 6 / span 7;
+}
+
+/* ─── Left column ────────────────────────────────────────────── */
+
+.label {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+/* ─── Bio ────────────────────────────────────────────────────── */
+
+.bio p {
+  font-size: var(--text-base);
+  line-height: var(--leading-reading);
+  font-weight: 400;
+  margin-bottom: var(--space-4);
+}
+
+.bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Rule ───────────────────────────────────────────────────── */
+
+.rule {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-8);
+}
+
+/* ─── CV Link ────────────────────────────────────────────────── */
+
+.cvLink {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-text);
+  padding-bottom: 1px;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+
+.cvLink:hover {
+  color: var(--color-muted);
+  border-color: var(--color-muted);
+}
+
+/* ─── Meta ───────────────────────────────────────────────────── */
+
+.meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--col-gap);
+  margin-top: var(--space-4);
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.metaLabel {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.metaValue {
+  font-size: var(--text-sm);
+}
+
+/* ─── Mobile ─────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: var(--space-6);
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    grid-column: 1;
+    padding-bottom: var(--space-3);
+  }
+
+  .right {
+    grid-column: 1;
+  }
+}

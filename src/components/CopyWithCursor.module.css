@@ -1,0 +1,21 @@
+.wrapper {
+  cursor: none;
+  position: relative;
+}
+
+.label {
+  position: fixed;
+  pointer-events: none;
+  transform: translate(10px, 10px);
+  font-size: 0.75rem;
+  color: var(--color-text);
+  white-space: nowrap;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 0;
+}
+
+.labelCopied {
+  color: #22c55e;
+}

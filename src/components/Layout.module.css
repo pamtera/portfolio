@@ -1,0 +1,52 @@
+.availabilityBar {
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  user-select: none;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 0;
+  flex-shrink: 0;
+  animation: twinkle 1.4s ease-in-out infinite, colorCycle 2.1s linear infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.25; }
+}
+
+@keyframes colorCycle {
+  0%        { background-color: #22c55e; } /* green */
+  16.666%   { background-color: #3b82f6; } /* blue */
+  33.333%   { background-color: #8b5cf6; } /* violet */
+  50%       { background-color: #ef4444; } /* red */
+  66.666%   { background-color: #f97316; } /* orange */
+  83.333%   { background-color: #eab308; } /* yellow */
+  100%      { background-color: #22c55e; } /* green */
+}
+
+.main {
+  padding-top: var(--nav-height);
+  padding-bottom: var(--nav-height);
+  min-height: 100vh;
+}
+
+.transition {
+  animation: fadeIn 200ms ease both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

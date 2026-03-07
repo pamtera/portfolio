@@ -1,0 +1,53 @@
+:root {
+  /* ─── Typography ─────────────────────────────────────────── */
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-serif: Georgia, serif;
+
+  --text-xs:      0.75rem;
+  --text-sm:      0.875rem;
+  --text-base:    1rem;
+  --text-lg:      1.25rem;
+  --text-xl:      2rem;
+  --text-2xl:     3.5rem;
+  --text-display: clamp(3rem, 8vw, 7rem);
+
+  --leading-tight:   1.1;
+  --leading-normal:  1.5;
+  --leading-loose:   1.75;
+  --leading-reading: 1.8;
+
+  --tracking-tight:  -0.02em; /* display headings */
+  --tracking-normal: 0em;
+  --tracking-wide:   0.1em;   /* caps labels */
+
+  /* ─── Color ──────────────────────────────────────────────── */
+  --color-bg:       #ffffff;
+  --color-text:     #111111;
+  --color-muted:    #999999;
+  --color-border:   #e0e0e0;
+  --color-accent:   #111111;
+  --color-hover-bg: #f5f5f5;
+  --color-surface:  #f0f0f0;
+
+  /* ─── Spacing ────────────────────────────────────────────── */
+  --space-unit: 8px;
+
+  --space-1:  8px;
+  --space-2:  16px;
+  --space-3:  24px;
+  --space-4:  32px;
+  --space-5:  40px;
+  --space-6:  48px;
+  --space-7:  56px;
+  --space-8:  64px;
+  --space-9:  72px;
+  --space-10: 80px;
+  --space-11: 88px;
+  --space-12: 96px;
+
+  /* ─── Layout ─────────────────────────────────────────────── */
+  --nav-height:   48px;
+  --max-width:    1400px;
+  --side-padding: var(--space-6);
+  --col-gap:      24px;
+}
