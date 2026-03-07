@@ -11,6 +11,7 @@
   grid-template-columns: repeat(12, 1fr);
   gap: var(--col-gap);
   align-items: start;
+  min-width: 0;
 }
 
 /* ─── Left column ────────────────────────────────────────────── */
@@ -726,6 +727,8 @@
 
   .right {
     grid-column: 1;
+    min-width: 0;
+    overflow: hidden;
   }
 
   .title {

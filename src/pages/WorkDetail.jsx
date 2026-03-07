@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useParams, Link, Navigate } from 'react-router-dom'
 import { projects } from '../data/projects'
 import styles from './WorkDetail.module.css'
@@ -39,7 +40,7 @@ function InitiativesModal({ opportunities, allOpportunities, onClose }) {
     }
   }, [onClose])
 
-  return (
+  return createPortal(
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
         <div className={styles.modalHeader}>
@@ -110,7 +111,8 @@ function InitiativesModal({ opportunities, allOpportunities, onClose }) {
 
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
 

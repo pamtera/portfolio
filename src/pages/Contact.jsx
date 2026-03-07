@@ -38,7 +38,8 @@ function Contact() {
     const next = !isMutedRef.current
     isMutedRef.current = next
     setIsMuted(next)
-    if (next) videoRef.current.volume = 0
+    videoRef.current.muted = next
+    if (!next) videoRef.current.volume = 0.35
   }
 
   useEffect(() => {
