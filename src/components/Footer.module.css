@@ -48,10 +48,18 @@
 @media (max-width: 768px) {
   .inner {
     padding-inline: var(--space-3);
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    display: none;
   }
 
   .center {
     display: none;
+  }
+
+  .right {
+    text-align: left;
   }
 }
